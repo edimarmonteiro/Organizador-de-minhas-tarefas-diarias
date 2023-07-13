@@ -1,0 +1,73 @@
+.conteiner {
+    background-color: #0f0f0f;
+    width: 100%;
+    /*Para fazer a melhor divição da tela, sem precisar adicionar a quela barra de decida.
+    Encaixar meu novos elementos nos tamanhos já definidos*/
+    height: calc(100vh - 76px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    max-width: 480px;
+    /*Ira adapitar a imagem para o tamanho escolido
+    sem precisar expremer*/
+    object-fit: contain;
+    width: auto;
+    height: auto;
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+    margin: 28px;
+    /*Espasamento entre linhas*/
+    line-height: 150%;
+}
+
+.infContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inf{
+    background-color: #fafafa;
+    padding: 14px 44px;
+    border-radius: 4px;
+    transition: transform 0.4s;
+}
+
+
+.inf:hover{
+    transform: scale(1.08);
+}
+
+@media screen and (max-wisth: 580px) {
+    .image {
+        max-width: 80%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .infContent {
+        flex-direction: column;
+    }
+
+    .inf {
+        width: 80%;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+}

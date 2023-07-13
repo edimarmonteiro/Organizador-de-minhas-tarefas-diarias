@@ -1,0 +1,9 @@
+.textarea {
+    width: 100%;
+    /*Para não ter o efeito de almentar o textarea*/
+    resize: none;
+    height: 160px;
+    border-radius: 8px;
+    outline: none;
+    padding: 8px;
+}
