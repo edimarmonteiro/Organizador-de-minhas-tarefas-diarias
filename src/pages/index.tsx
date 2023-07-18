@@ -52,7 +52,7 @@ export default function Home({ comments, tarefas }: HomeProps) {
 export const getStaticProps: GetStaticProps = async () => {
 
   //Acessando os comentarios
-  const commentRef = collection(db, "comment")
+  const commentRef = collection(db, "comments")
   const commentSnapshot = await getDocs(commentRef)
 
   //Acessando as tarefas
